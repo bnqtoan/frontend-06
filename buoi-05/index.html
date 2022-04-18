@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buổi 5</title>
+    <link rel="stylesheet" href="./css/splide-core.min.css">
+    <!-- <link rel="stylesheet" href="./css/themes/splide-default.min.css"> -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body class="transition-all bg-gray-100 dark:bg-black">
+    <button id="toggle-dark-mode" class="dark:text-white">Toggle darkmode</button>
+    <div class="container">
+        <section class="relative splide" aria-label="Splide Basic HTML Example">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <div class="">
+                            <div class="p-8 bg-white dark:bg-yellow-500 box rounded-xl">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor neque sed imperdiet nibh lectus feugiat nunc sem.
+                            </div>
+                            <div class="flex justify-center -mt-1">
+                                <img src="./images/arrow.svg" alt="arrow">
+                            </div>
+                            <div class="flex justify-center">
+                                <div class="rounded-full w-[56px] h-[56px] bg-center bg-cover" style="background-image: url(./images/avt.jpg);">
+
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="">
+                            <div class="p-8 bg-white box rounded-xl dark:bg-yellow-500">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor neque sed imperdiet nibh lectus feugiat nunc sem.
+                            </div>
+                            <div class="flex justify-center -mt-1">
+                                <img src="./images/arrow.svg" alt="arrow">
+                            </div>
+                            <div class="flex justify-center">
+                                <div class="rounded-full w-[56px] h-[56px] bg-center bg-cover" style="background-image: url(./images/avt.jpg);">
+
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="">
+                            <div class="p-8 bg-white box rounded-xl dark:bg-yellow-500">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor neque sed imperdiet nibh lectus feugiat nunc sem.
+                            </div>
+                            <div class="flex justify-center -mt-1">
+                                <img src="./images/arrow.svg" alt="arrow">
+                            </div>
+                            <div class="flex justify-center">
+                                <div class="rounded-full w-[56px] h-[56px] bg-center bg-cover" style="background-image: url(./images/avt.jpg);">
+
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="">
+                            <div class="p-8 bg-white box rounded-xl dark:bg-yellow-500">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor neque sed imperdiet nibh lectus feugiat nunc sem.
+                            </div>
+                            <div class="flex justify-center -mt-1">
+                                <img src="./images/arrow.svg" alt="arrow">
+                            </div>
+                            <div class="flex justify-center">
+                                <div class="rounded-full w-[56px] h-[56px] bg-center bg-cover" style="background-image: url(./images/avt.jpg);">
+
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="">
+                            <div class="p-8 bg-white box rounded-xl dark:bg-yellow-500">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor neque sed imperdiet nibh lectus feugiat nunc sem.
+                            </div>
+                            <div class="flex justify-center -mt-1">
+                                <img src="./images/arrow.svg" alt="arrow">
+                            </div>
+                            <div class="flex justify-center">
+                                <div class="rounded-full w-[56px] h-[56px] bg-center bg-cover" style="background-image: url(./images/avt.jpg);">
+
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+    <script src="./js/splide.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var splide = new Splide('.splide', {
+                type: 'loop',
+                perPage: 3,
+                gap: '30px',
+                breakpoints: {
+                    640: {
+                        perPage: 1,
+                        padding: {
+                            right: '20%'
+                        }
+                    },
+                },
+                classes: {
+                    arrows: 'text-white splide__arrows flex justify-between absolute top-1/2 w-full z-30',
+                    arrow: 'splide__arrow your-class-arrow',
+                    prev: 'splide__arrow--prev transform rotate-180',
+                    next: 'splide__arrow--next your-class-next',
+                },
+            });
+            splide.mount();
+        });
+        const btn = document.getElementById('toggle-dark-mode');
+        const html = document.getElementsByTagName('html')[0];
+        btn.addEventListener('click', function() {
+            console.log("Click me");
+            html.classList.toggle('dark');
+        });
+    </script>
+</body>
+
+</html>
