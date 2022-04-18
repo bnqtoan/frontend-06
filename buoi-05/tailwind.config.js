@@ -2,7 +2,7 @@ module.exports = {
   content: [
     "**/*.html"
   ],
-  darkMode: 'media', // or 'media' or 'class'
+  darkMode: 'media1', // or 'media' or 'class'
   theme: {
     container: {
       center: true
